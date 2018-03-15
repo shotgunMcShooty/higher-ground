@@ -33,4 +33,18 @@ public class Pintura extends Obra {
 	public String toString() {
 		return Muestra();
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o == null) return false;
+		if(o == this) return true;
+		if(o instanceof Pintura) {
+			Pintura otro = (Pintura) o;
+			if(super.equals(otro) && otro.alto==this.alto && otro.ancho==this.ancho && otro.soporte.equals(soporte))
+				return true;
+			else 
+				return false;
+		}else
+			return false;
+	}
 }

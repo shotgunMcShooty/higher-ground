@@ -27,4 +27,18 @@ public class Escultura extends Obra {
 	public String toString() {
 		return Muestra();
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o == null) return false;
+		if(o == this) return true;
+		if(o instanceof Escultura) {
+			Escultura otro = (Escultura) o;
+			if(super.equals(otro) && otro.altura==this.altura && otro.material.equals(this.material))
+				return true;
+			else
+				return false;
+		}else
+			return false;
+	}
 }
