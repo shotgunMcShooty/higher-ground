@@ -18,7 +18,15 @@ public class Pintura extends Obra {
 		this.soporte=soporte;
 	}
 	
-	public String toString() {
-		return super.toString()+"\n\nDimensiones: "+alto+"cm x"+ancho+"cm\nSoporte: "+soporte;
+	public double getAlto() {
+		return alto;
+	}
+
+	public double getAncho() {
+		return ancho;
+	}
+
+	public String Muestra() {
+		return super.Muestra()+"\n\nDimensiones: "+alto+"cm x"+ancho+"cm\nSoporte: "+soporte;
 	}
 }

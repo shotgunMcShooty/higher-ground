@@ -25,7 +25,7 @@ public class Obra {
 		this.autor=autor;
 	}
 	
-	public String toString() {
+	public String Muestra() {
 		return "Título: "+titulo+"\nNumero de inventario: "+nInventario+"\nAño: "+anio+
 				"\nAutor:\n"+autor;
 	}

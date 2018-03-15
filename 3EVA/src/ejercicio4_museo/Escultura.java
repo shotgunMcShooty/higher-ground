@@ -16,7 +16,11 @@ public class Escultura extends Obra {
 		this.altura=altura;
 	}
 	
-	public String toString() {
-		return super.toString()+"\n\nAltura: "+altura+"cm\nMaterial: "+material;
+	public double getAltura() {
+		return altura;
+	}
+
+	public String Muestra() {
+		return super.Muestra()+"\n\nAltura: "+altura+"cm\nMaterial: "+material;
 	}
 }
