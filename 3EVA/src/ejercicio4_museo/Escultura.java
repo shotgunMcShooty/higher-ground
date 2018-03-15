@@ -23,4 +23,8 @@ public class Escultura extends Obra {
 	public String Muestra() {
 		return super.Muestra()+"\n\nAltura: "+altura+"cm\nMaterial: "+material;
 	}
+	
+	public String toString() {
+		return Muestra();
+	}
 }

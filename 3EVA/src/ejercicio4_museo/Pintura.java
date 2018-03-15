@@ -29,4 +29,8 @@ public class Pintura extends Obra {
 	public String Muestra() {
 		return super.Muestra()+"\n\nDimensiones: "+alto+"cm x"+ancho+"cm\nSoporte: "+soporte;
 	}
+	
+	public String toString() {
+		return Muestra();
+	}
 }

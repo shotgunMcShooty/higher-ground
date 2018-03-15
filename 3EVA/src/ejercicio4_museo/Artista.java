@@ -3,6 +3,10 @@ package ejercicio4_museo;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * @author leona
+ *
+ */
 public class Artista {
 	private String nombre, lugarNac;
 	private Date nacimiento, muerte;
@@ -48,6 +52,23 @@ public class Artista {
 
 	public void setMuerte(Date muerte) {
 		this.muerte = muerte;
+	}
+	
+	public boolean equals(Object o) {
+		if(o == null) return false;
+		if(o == this ) return true;
+		if(o instanceof Artista) {
+			Artista otro = (Artista) o;
+			if(otro.lugarNac.equals(this.lugarNac) && otro.muerte.equals(this.muerte) && otro.nacimiento.equals(this.nacimiento) && otro.nombre.equals(this.nombre))
+				return true;
+			else
+				return false;
+		}else
+			return false;
+	}
+	
+	public String Muestra() {
+		return toString();
 	}
 	
 	public String toString() {
