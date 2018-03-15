@@ -9,8 +9,20 @@ public class Catalogo {
 		catalogo = new Vector<Obra>(10,1);
 	}
 	
-	public void anadeObra(Obra o) {
+	public boolean anadeObra(Obra o) {
+		for(int i=0;i<catalogo.size();i++) {
+			if(o instanceof Pintura && catalogo.get(i) instanceof Pintura) {
+				Pintura p = (Pintura) o;
+				if(p.equals(catalogo.get(i)))
+					return false;
+			}else if(o instanceof Escultura && catalogo.get(i) instanceof Escultura) {
+				Escultura e = (Escultura) o;
+				if(e.equals(catalogo.get(i)))
+					return false;
+			}
+		}
 		catalogo.add(o);
+		return true;
 	}
 	
 	public boolean eliminaObra(long nInv) {

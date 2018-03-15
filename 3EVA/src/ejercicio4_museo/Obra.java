@@ -1,6 +1,6 @@
 package ejercicio4_museo;
 
-public class Obra {
+public abstract class Obra {
 	protected String titulo;
 	protected long nInventario;
 	protected Artista autor;
