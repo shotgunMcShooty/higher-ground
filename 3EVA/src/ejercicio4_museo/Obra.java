@@ -62,7 +62,7 @@ public abstract class Obra {
 		this.autor=autor;
 	}
 	/**
-	 * Método que imprime los datos de la obra
+	 * Método que imprime los datos de la obra.
 	 * @return Todos los datos de la obra.
 	 */
 	public String Muestra() {
@@ -74,7 +74,7 @@ public abstract class Obra {
 	 * @param o Objeto que recibe, puede ser de cualquier tipo.
 	 * @return <ul>
 	 * 				<li><strong>true:</strong> Los atributos del objeto que se recibe tienen los mismos valores que los del objeto con el se compara.</li>
-	 * 				<li><strong>false:</strong> El objeto no es del tipo Artista, no indica ninguna posicion de memoria o tiene valores distintos.</li>
+	 * 				<li><strong>false:</strong> El objeto no es del tipo Obra, no indica ninguna posicion de memoria o tiene valores distintos.</li>
 	 * 			</ul>
 	 * @see Object
 	 */
