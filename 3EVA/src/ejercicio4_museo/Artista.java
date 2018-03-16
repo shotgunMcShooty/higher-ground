@@ -119,6 +119,6 @@ public class Artista {
 		String nacimiento = fecha.format(this.nacimiento);
 		String muerte = fecha.format(this.muerte);
 		return "Nombre: "+nombre+"\nLugar de nacimiento: "+lugarNac+"\nNacimiento: "+nacimiento+
-				"Fallecimiento: "+muerte;
+				"\nFallecimiento: "+muerte;
 	}
 }
