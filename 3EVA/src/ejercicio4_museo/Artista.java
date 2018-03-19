@@ -111,7 +111,6 @@ public class Artista {
 	/**
 	 * Método que imprime todos los datos del artista
 	 * @return Los datos del artista
-	 * @see DateFormat
 	 * @see SimpleDateFormat
 	 */
 	public String toString() {
